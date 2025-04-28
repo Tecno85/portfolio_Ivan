@@ -1,6 +1,6 @@
 :root {
   --font-contactos: "Kode Mono", monospace;
-  --font-sobre-mi-h2: "Quantico", sans-serif;
+  --font-h2: "Quantico", sans-serif;
   --font-sobre-mi-p: "Tomorrow", sans-serif;
   --font-1: "Anek Latin", sans-serif;
   --font-2: "Iceland", sans-serif;
@@ -113,7 +113,7 @@ header {
 
 .sobre-mi h2 {
   margin-top: 30px;
-  font-family: var(--font-sobre-mi-h2);
+  font-family: var(--font-h2);
 }
 
 .sobre-mi p {
@@ -123,5 +123,99 @@ header {
   font-weight: 200;
   line-height: 1.8rem;
   font-size: 1.1rem;
+}
+
+/* Main */
+main h2 {
+  padding-top: 30px;
+  font-family: var(--font-h2);
+}
+
+/* Tecnologías */
+.tecnologias {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.git {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  background-color: rgb(227, 225, 225);
+  font-family: var(--font-1);
+  font-weight: 600;
+  color: #31363f;
+  padding: 1.9px 6px;
+  border-radius: 0.2rem;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  background-color: rgb(227, 225, 225);
+  font-family: var(--font-1);
+  font-weight: 600;
+  color: #31363f;
+  padding: 5.8px 5px;
+  border-radius: 0.2rem;
+
+}
+
+.html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(227, 225, 225);
+  font-family: var(--font-1);
+  font-weight: 600;
+  color: #31363f;
+  border-radius: 0.2rem;
+  padding: 6px 5px;
+}
+
+.css {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(227, 225, 225);
+  font-family: var(--font-1);
+  font-weight: 600;
+  color: #31363f;
+  border-radius: 0.2rem;
+  padding: 6px 5px;
+}
+
+.javascript {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: rgb(227, 225, 225);
+  font-family: var(--font-1);
+  font-weight: 600;
+  color: #31363f;
+  border-radius: 0.2rem;
+  padding: 6px 5px;
+}
+
+.markdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: rgb(227, 225, 225);
+  font-family: var(--font-1);
+  font-weight: 600;
+  color: #31363f;
+  border-radius: 0.2rem;
+  padding: 2px 4px;
 }
 
