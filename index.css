@@ -1,0 +1,127 @@
+:root {
+  --font-contactos: "Kode Mono", monospace;
+  --font-sobre-mi-h2: "Quantico", sans-serif;
+  --font-sobre-mi-p: "Tomorrow", sans-serif;
+  --font-1: "Anek Latin", sans-serif;
+  --font-2: "Iceland", sans-serif;
+  --font-3: "Tourney", sans-serif;
+  --font-4: "Russo One", sans-serif;
+  --font-5: "Poiret One", sans-serif;
+  --font-7: "Audiowide", sans-serif;
+  --font-9: "Black Ops One", system-ui;
+  --font-10: "Rubik Doodle Shadow", system-ui;
+  --font-11: "Allerta Stencil", sans-serif;
+  --font-12: "Bungee Inline", sans-serif;
+  --font-13: "Geo", sans-serif;
+  --font-14: "Rationale", sans-serif;
+  --font-16: "Bungee Hairline", sans-serif;
+  --font-17: "Protest Guerrilla", sans-serif;
+  --font-18: "Rubik Burned", system-ui;
+  --font-19: "Rubik 80s Fade", system-ui;
+  --font-20: "Rubik Pixels", system-ui;
+  --font-21: "Rubik Storm", system-ui;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #31363f;
+  color: white;
+  font-size: 1rem;
+  max-width: 800px; /* Ancho máximo */
+  margin: 0 auto; /* Centra el contenido */
+  padding: 0 20px; /* Espacio en los laterales para pantallas pequeñas */
+  margin-top: 70px;
+}
+
+header {
+  border-bottom: 4px solid #ccccccbe;
+  padding-bottom: 20px;
+}
+
+.contenido-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.foto_ivan {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+}
+
+.contactos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.nombre {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nombre h1 {
+  font-family: var(--font-contactos);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.nombre p {
+  font-family: var(--font-contactos);
+  font-size: 1.3rem;
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.ubicacion,
+.email-redes-cv p {
+  font-family: var(--font-contactos);
+  font-size: 0.9rem;
+}
+
+.email-redes-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons {
+  padding: 0px 2px;
+}
+
+.sobre-mi h2 {
+  margin-top: 30px;
+  font-family: var(--font-sobre-mi-h2);
+}
+
+.sobre-mi p {
+  text-align: justify;
+  margin-top: 15px;
+  font-family: var(--font-sobre-mi-p);
+  font-weight: 200;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
