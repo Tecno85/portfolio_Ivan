@@ -39,12 +39,7 @@ body {
   max-width: 800px; /* Ancho máximo */
   margin: 0 auto; /* Centra el contenido */
   padding: 0 20px; /* Espacio en los laterales para pantallas pequeñas */
-  margin-top: 70px;
-}
-
-header {
-  border-bottom: 4px solid #ccccccbe;
-  padding-bottom: 20px;
+  margin-top: 60px;
 }
 
 .contenido-header {
@@ -131,12 +126,13 @@ header {
 main h2 {
   padding-top: 30px;
   font-family: var(--font-h2);
+  font-size: 1.4rem;
 }
 
 /* Tecnologías */
 .tecnologias {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   gap: 15px;
   margin-top: 20px;
@@ -225,6 +221,8 @@ main h2 {
 
 .proyectos {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .titan-force-studio {
@@ -234,6 +232,8 @@ main h2 {
 .titan-force-studio-imagen {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  gap: 140px;
 }
 
 .logo-titan {
@@ -245,46 +245,74 @@ main h2 {
 .titan-figcaption {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  max-width: 300px;
 }
 
 .titan-figcaption h3 {
   font-family: var(--font-h2);
   padding-bottom: 5px;
+  color: #67c9dd;
+  font-size: 1.25rem;
 }
 
 .titan-figcaption p {
   font-family: var(--font-sobre-mi-p);
   font-weight: 200;
-  line-height: 1.2rem;
+  line-height: 1.6rem;
 }
 
 .tecnologia-usada {
   display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.html-css,
+.project-links {
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .tecnologia-html,
-.tecnologia-js {
+.tecnologia-css {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6px;
 }
 
-.tecnologia-usada p {
-  font-family: var(--font-13);
-}
-
 .icon-html-5,
-.icon-js {
+.icon-css {
   width: 18px;
 }
 
+.demo-link,
+.repo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.demo-js,
+.repo-github {
+  width: 25px;
+}
+
+.repo-link,
+.demo-link,
+.tecnologia-css,
+.tecnologia-html {
+  display: flex;
+  gap: 5px;
+  font-family: var(--font-13);
+}
+
 .imagen-titan {
-  width: 300px;
+  width: 200px;
   border: 1px solid grey;
   border-radius: 0.5rem;
 }
@@ -292,6 +320,9 @@ main h2 {
 /* Responsive */
 
 @media (max-width: 480px) {
+  body {
+    margin-top: 45px;
+  }
   .foto_ivan {
     max-width: 120px; /* Tamaño ligeramente menor en móviles */
   }
@@ -311,5 +342,4 @@ main h2 {
   .hidden-mobile {
     display: none;
   }
-
 }
