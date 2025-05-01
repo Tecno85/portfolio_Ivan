@@ -42,6 +42,7 @@ body {
   margin-top: 60px;
 }
 
+/* Header */
 .contenido-header {
   display: flex;
   justify-content: center;
@@ -91,7 +92,7 @@ body {
   gap: 8px;
 }
 
-.ubicacion,
+.ubicacion p,
 .email-redes-cv p {
   font-family: var(--font-contactos);
   font-size: 0.9rem;
@@ -109,7 +110,7 @@ body {
 }
 
 .sobre-mi h2 {
-  margin-top: 30px;
+  margin-top: 40px;
   font-family: var(--font-h2);
 }
 
@@ -118,13 +119,14 @@ body {
   margin-top: 15px;
   font-family: var(--font-sobre-mi-p);
   font-weight: 200;
-  line-height: 1.8rem;
   font-size: 1.1rem;
+  line-height: 1.5rem;
 }
 
 /* Main */
+
 main h2 {
-  padding-top: 30px;
+  margin: 35px 0px 25px;
   font-family: var(--font-h2);
   font-size: 1.4rem;
 }
@@ -135,7 +137,6 @@ main h2 {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  margin-top: 20px;
   flex-wrap: wrap;
 }
 
@@ -223,57 +224,66 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 15px;
 }
 
-.titan-force-studio {
-  margin-top: 30px;
+.titan-force-studio, .project-felidos {
+  border: 1px solid rgba(255, 255, 255, 0.194);
+  padding: 10px;
+  border-radius: 0.5rem;
 }
 
-.titan-force-studio-imagen {
+.titan-force-studio-imagen,
+.proyect-card {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 140px;
+  align-items: centeer;
+  gap: 100px;
 }
 
-.logo-titan {
-  display: flex;
-  justify-content: center;
-  align-self: start;
-}
-
-.titan-figcaption {
+.titan-figcaption,
+.project-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   max-width: 300px;
 }
 
-.titan-figcaption h3 {
+.titan-figcaption h3,
+.project-info h3 {
   font-family: var(--font-h2);
-  padding-bottom: 5px;
   color: #67c9dd;
   font-size: 1.25rem;
+  padding-bottom: 5px;
 }
 
-.titan-figcaption p {
+.titan-figcaption p,
+.project-info p {
   font-family: var(--font-sobre-mi-p);
   font-weight: 200;
-  line-height: 1.6rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
 }
 
 .tecnologia-usada {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 10px;
 }
 
-.html-css,
 .project-links {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.html-css {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.2rem;
 }
 
 .tecnologia-html,
@@ -289,15 +299,6 @@ main h2 {
   width: 18px;
 }
 
-.demo-link,
-.repo-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-}
-
-.demo-js,
 .repo-github {
   width: 25px;
 }
@@ -307,15 +308,21 @@ main h2 {
 .tecnologia-css,
 .tecnologia-html {
   display: flex;
-  gap: 5px;
+  gap: 0.5rem;
   font-family: var(--font-13);
 }
 
-.imagen-titan {
-  width: 200px;
-  border: 1px solid grey;
+.imagen-titan,
+.imagen-feline {
+  height: 200px;
+  width: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.194);
   border-radius: 0.5rem;
 }
+
+/* Formación */
+
+
 
 /* Responsive */
 
