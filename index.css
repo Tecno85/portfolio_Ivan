@@ -227,7 +227,8 @@ main h2 {
   gap: 15px;
 }
 
-.titan-force-studio, .project-felidos {
+.titan-force-studio,
+.project-felidos {
   border: 1px solid rgba(255, 255, 255, 0.194);
   padding: 10px;
   border-radius: 0.5rem;
@@ -322,7 +323,61 @@ main h2 {
 
 /* Formación */
 
+.formacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
+.estudio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12rem;
+  padding: 0.2rem;
+}
+
+.certificado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.descripcion-certificado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  font-family: var(--font-sobre-mi-p);
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.fecha-imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fecha-imagen img {
+  align-self: center;
+}
+
+.fecha-imagen p {
+  font-family: var(--font-sobre-mi-p);
+  font-weight: 200;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  width: 140px;
+}
+
+.titulo-egg {
+  font-weight: 400;
+  padding-bottom: 0.3rem;
+}
 
 /* Responsive */
 
@@ -339,11 +394,12 @@ main h2 {
     text-align: center;
   }
 
-  .titan-force-studio-imagen {
+  .titan-force-studio-imagen,
+  .proyect-card {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
   }
 
   .hidden-mobile {
